@@ -9,6 +9,10 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 TOKEN = "8662151451:FpKPGA3E2BIJK"
 CHANNEL_ID = -1003916588968
 
+bot = telebot.TeleBot(TOKEN)
+
+bot.send_message(CHANNEL_ID, "✅ TEST: Railway bot connected to Telegram")
+
 
 bot = telebot.TeleBot(TOKEN)
 
