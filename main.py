@@ -55,14 +55,18 @@ COOLDOWN = 1800 # 30 minutes
 
 
 def quality(confidence):
-if confidence >= 85:
-return "⚡️ Exceptional"
-elif confidence >= 70:
-return "🔵 Strong"
-elif confidence >= 55:
-return "🟡 Moderate"
-else:
-return "⚪️ Weak"
+  
+  if confidence >= 85:
+    return "⚡️ Exceptional"
+
+  elif confidence >= 70:
+    return "🔵 Strong"
+
+  elif confidence >= 55:
+    return "🟡 Moderate"
+
+  else:
+    return "⚪️ Weak"
 
 
 def trade_keyboard(pair, direction, confidence):
