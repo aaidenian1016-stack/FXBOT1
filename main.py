@@ -6,8 +6,8 @@ import feedparser
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-CHANNEL_ID = int(os.getenv("TELEGRAM_CHANNEL_ID"))
+TOKEN = os.getenv("8662151451:FpKPGA3E2BIJK")
+CHANNEL_ID = int(os.getenv("-1003916588968"))
 
 bot = telebot.TeleBot(TOKEN)
 
