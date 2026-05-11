@@ -70,17 +70,23 @@ def quality(confidence):
 
 
 def trade_keyboard(pair, direction, confidence):
-markup = InlineKeyboardMarkup()
+  
+  markup = InlineKeyboardMarkup()
 markup.row(
-InlineKeyboardButton("Why?", callback_data=f"why|{pair}|{direction}"),
-InlineKeyboardButton("Confidence", callback_data=f"conf|{confidence}")
+    InlineKeyboardButton("Why?", callback_data=f"why|{pair}|{direction}"),
+
+    InlineKeyboardButton("Confidence", callback_data=f"conf|{confidence}")
 )
+
 return markup
 
 
 def news_keyboard(link):
-markup = InlineKeyboardMarkup()
-markup.row(InlineKeyboardButton("Learn More", url=link))
+
+  markup = InlineKeyboardMarkup()
+
+  markup.row(InlineKeyboardButton("Learn More", url=link)
+  )
 return markup
 
 
